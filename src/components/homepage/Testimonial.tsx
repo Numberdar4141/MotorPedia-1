@@ -19,12 +19,8 @@ function Testimonial() {
       <div className="container">
         <div className="flex justify-center items-cneter gap-6 max-lg:flex-col max-lg:items-center">
           <div className="  max-w-[600px] flex justify-center items-center flex-col">
-            <p className="bg-p1 py-3 px-5 rounded-full text-white ">
-              Testimonial
-            </p>
             <h1 className="display-4  pt-4 ">Testimonials</h1>
           </div>
-          
         </div>
       </div>
       <div className="sponsors stp-15">
@@ -68,8 +64,8 @@ function Testimonial() {
         >
           {testimonials.map(({ id, name, designation, review }) => (
             <SwiperSlide key={id}>
-              <div className="border  p-12 flex flex-col rounded-2xl shadow-sm bg-gray-100 justify-center items-center hover:bg-gray-200  hover:shadow-lg hover:scale-90 hover:border-mainTextColor duration-700 h-[230px]">
-                <p className="text-bodyText text-center">"{review}"</p>
+              <div className="border  p-12 flex flex-col rounded-2xl shadow-sm bg-gray-100 justify-center items-center hover:bg-gray-200  hover:shadow-lg hover:scale-90 hover:border-mainTextColor duration-100 h-[260px]">
+                <p className="text-bodyText  text-justify">"{review}"</p>
                 <div className="flex gap-3 pt-3">
                   <div className="">
                     <p className="text-lg text-center font-medium">{name}</p>

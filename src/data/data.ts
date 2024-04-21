@@ -1,34 +1,63 @@
 import React from "react";
-import { AiFillFileText } from "react-icons/ai";
+// import {
+//   AiFillBehanceCircle,
+//   AiFillCiCircle,
+//   AiFillFileText,
+//   AiFillPlusCircle,
+//   AiFillQqCircle,
+//   AiFillWeiboCircle,
+// } from "react-icons/ai";
 import {
+  FaCartArrowDown,
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
-  FaUsers,
+  FaRunning,
+  FaCarAlt,
+  
+  //FaUsers,
 } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
+import { TbQuotes } from "react-icons/tb";
+import { BiSelectMultiple } from "react-icons/bi";
+import { FaMoneyBillTransfer } from "react-icons/fa6";
+import { RiFundsBoxFill,
+  RiExchangeFundsLine, } from "react-icons/ri";
+import {
+  FaHandshakeSimple,
+  FaPeopleGroup,
+  FaTachographDigital,
+  FaXTwitter,
+} from "react-icons/fa6";
+import { BiSolidOffer } from "react-icons/bi";
+import {
+  MdEditDocument,
+  MdOutlineEmail,
+  MdOutlineInventory,
+  MdOutlineLocationOn,
+} from "react-icons/md";
 import {
   //PiBinocularsFill,
   PiBuildingsFill,
   //PiCalculatorFill,
   PiCalendarBlankFill,
-  PiCarDuotone,
-  PiCarProfileDuotone,
+  // PiCarDuotone,
+  // PiCarProfileDuotone,
+  PiCarSimpleBold,
   PiChartLineFill,
   // PiChartLineUpFill,
   // PiChatCenteredFill,
   // PiChatCircleFill,
   // PiCheck,
-  PiCheckCircleFill,
-  PiCheckSquareDuotone,
-  PiCoinFill,
-  PiDesktopDuotone,
+  // PiCheckCircleFill,
+  // PiCheckSquareDuotone,
+ // PiCoinFill,
+  // PiCrownDuotone,
+  // PiDesktopDuotone,
   // PiDesktopFill,
   // PiDeviceMobileFill,
   PiEnvelopeFill,
   PiFileArchiveDuotone,
-  PiFileFill,
+  // PiFileFill,
   PiFileMagnifyingGlassDuotone,
   PiFilePlusFill,
   PiFileTextFill,
@@ -37,25 +66,18 @@ import {
   PiHandshakeFill,
   PiHeadphonesFill,
   PiHeartbeatFill,
-  PiLightbulbFilamentFill,
+  //PiLightbulbFilamentFill,
   PiMapPinFill,
   PiMoneyFill,
-  // PiNotePencilBold,
-  // PiNumberSquareThreeDuotone,
-  // PiPaletteFill,
   PiPhoneCallBold,
   PiPhoneCallDuotone,
   PiPhoneCallFill,
-  PiRocketLaunchFill,
-  PiSealCheckFill,
+  //PiSealCheckFill,
   PiStarFill,
   PiTimerFill,
   PiToothFill,
   PiUserFill,
-  PiUserGearFill,
-  PiUserPlusFill,
   PiUsersThreeFill,
-  PiWalletFill,
   PiWebhooksLogoFill,
   PiWhatsappLogo,
   //PiWhatsappLogoBold,
@@ -63,10 +85,10 @@ import {
 } from "react-icons/pi";
 import { v4 as uuidv4 } from "uuid";
 
-//import whyMotorpediaCard1 from "/images/whyAccoupayCard_1.png";
-import whyMotorpediaCard2 from "/images/RTO1.png";
-import whyMotorpediaCard3 from "/images/cars12.jpg";
-import whyMotorpediaCard4 from "/images/personal.jpg";
+import whyMotorpediaCard1 from "/images/img1.jpg";
+import whyMotorpediaCard2 from "/images/whyus2.jpg";
+import whyMotorpediaCard3 from "/images/whyus3.jpg";
+import whyMotorpediaCard4 from "/images/whyus4.jpg";
 // import whyMotorpediaCard5 from "/images/whyAccoupayCard_5.png";
 // import whyMotorpediaCard6 from "/images/whyAccoupayCard_6.png";
 
@@ -74,18 +96,25 @@ import testimonial1 from "/images/testimonial1.png";
 import testimonial2 from "/images/testimonial2.png";
 import testimonial3 from "/images/testimonial3.png";
 import testimonial4 from "/images/testimonial4.png";
-import testimonial5 from "/images/testimonial5.png";
-import testimonial6 from "/images/testimonial6.png";
-import testimonial7 from "/images/testimonial7.png";
-import testimonial8 from "/images/testimonial8.png";
+// import testimonial5 from "/images/testimonial5.png";
+// import testimonial6 from "/images/testimonial6.png";
+// import testimonial7 from "/images/testimonial7.png";
+// import testimonial8 from "/images/testimonial8.png";
 
 import blogImg1 from "/images/blogImg1.png";
 import blogImg2 from "/images/blogImg2.png";
 import blogImg3 from "/images/blogImg3.png";
 
-import { BsFillRocketTakeoffFill } from "react-icons/bs";
-import { GiKite } from "react-icons/gi";
-// import { HiCurrencyDollar } from "react-icons/hi2";
+import {
+  BsBagHeartFill,
+  BsClockHistory,
+  BsFillRocketTakeoffFill,
+  BsGraphUpArrow,
+  BsPersonCheck,
+  BsRobot,
+} from "react-icons/bs";
+import { GiCarKey, GiKite } from "react-icons/gi";
+
 import { SlPlane } from "react-icons/sl";
 
 import caseStudyImg1 from "/images/case_study_img1.png";
@@ -121,10 +150,23 @@ import recentPostImg3 from "/images/recent_post_img3.png";
 import recentPostImg4 from "/images/recent_post_img4.png";
 // import { TbMapPinSearch } from "react-icons/tb";
 import {
+  SiConvertio,
+  //SiPiaggiogroup,
   // SiPicardsurgeles,
-  SiPivotaltracker,
   SiPrivateinternetaccess,
 } from "react-icons/si";
+//import { RiGroup2Fill } from "react-icons/ri";
+// import { GrServices } from "react-icons/gr";
+// import { Link } from "react-router-dom";
+import { LiaChalkboardTeacherSolid } from "react-icons/lia";
+import { TbDeviceDesktopStar } from "react-icons/tb";
+import { IoMailUnreadOutline } from "react-icons/io5";
+// import { FcAssistant } from "react-icons/fc";
+// import { GrAction, GrHelp, GrHelpBook } from "react-icons/gr";
+import { BiCheckShield, BiTargetLock } from "react-icons/bi";
+import { RiSeoFill } from "react-icons/ri";
+import { TiSocialGooglePlusCircular } from "react-icons/ti";
+import { HiDocumentCheck } from "react-icons/hi2";
 
 export const headerMenu = [
   {
@@ -158,17 +200,17 @@ export const headerMenu = [
       },
       {
         id: uuidv4(),
-        name: "DigitalizePro Services",
+        name: "Digitalization",
         link: "/services/DigitalizePro",
       },
       {
         id: uuidv4(),
-        name: "RTO Services",
+        name: "RTO Assistance",
         link: "/services/RTO",
       },
       {
         id: uuidv4(),
-        name: "Sale Enablement Services",
+        name: "Sales Enablement",
         link: "/services/saleEnablement",
       },
       // {
@@ -237,75 +279,9 @@ export const headerMenu = [
 
   {
     id: uuidv4(),
-    name: "More",
-    isSubmenu: true,
-    submenu: [
-      // {
-      //   id: uuidv4(),
-      //   name: "Appointment",
-      //   link: "/appointment",
-      // },
-      // {
-      //   id: uuidv4(),
-      //   name: "Case Study",
-      //   link: "/case-study",
-      // },
-      // {
-      //   id: uuidv4(),
-      //   name: "Case Study Detials",
-      //   link: "/case-study/case-study-details",
-      // },
-      {
-        id: uuidv4(),
-        name: "Our Team",
-        link: "/team",
-      },
-      // {
-      //   id: uuidv4(),
-      //   name: "Team Details",
-      //   link: "/team/team-details",
-      // },
-      // {
-      //   id: uuidv4(),
-      //   name: "About",
-      //   link: "/about",
-      // },
-      // {
-      //   id: uuidv4(),
-      //   name: "Pricing",
-      //   link: "/pricing",
-      // },
-      {
-        id: uuidv4(),
-        name: "FAQ Page",
-        link: "/faq",
-      },
-      // {
-      //   id: uuidv4(),
-      //   name: "Login",
-      //   link: "/login",
-      // },
-      // {
-      //   id: uuidv4(),
-      //   name: "Register",
-      //   link: "/register",
-      // },
-      {
-        id: uuidv4(),
-        name: "Privacy Policy",
-        link: "/privacy-policy",
-      },
-      {
-        id: uuidv4(),
-        name: "Terms & Conditions",
-        link: "/terms-conditions",
-      },
-      // {
-      //   id: uuidv4(),
-      //   name: "Error",
-      //   link: "/error",
-      // },
-    ],
+    name: "FAQs",
+    link: "/faq",
+    isSubmenu: false,
   },
 ];
 
@@ -319,7 +295,7 @@ export const socialLinks = [
   {
     id: uuidv4(),
     name: "Twitter",
-    link: "#",
+    link: "https://twitter.com/TheMotorPedia",
     icon: React.createElement(FaXTwitter),
   },
   {
@@ -331,7 +307,7 @@ export const socialLinks = [
   {
     id: uuidv4(),
     name: "Instagram",
-    link: "#",
+    link: "https://www.instagram.com/motorpedia_in/",
     icon: React.createElement(FaInstagram),
   },
 ];
@@ -354,8 +330,8 @@ export const footerLinks = [
 
       {
         id: uuidv4(),
-        name: "Blog",
-        link: "/blog",
+        name: "Services",
+        link: "/services",
       },
       {
         id: uuidv4(),
@@ -375,17 +351,17 @@ export const footerLinks = [
       },
       {
         id: uuidv4(),
-        name: "DigitalizePro Services",
+        name: "Digitalization",
         link: "/services/DigitalizePro",
       },
       {
         id: uuidv4(),
-        name: "RTO Services",
+        name: "RTO",
         link: "/services/RTO",
       },
       {
         id: uuidv4(),
-        name: "Sale Enablement Services",
+        name: "Sale Enablement",
         link: "/services/saleEnablement",
       },
       // {
@@ -404,21 +380,21 @@ export const getInTouch = [
     links: [
       {
         id: uuidv4(),
-        name: "themotorpedia@gmail.com",
-        link: "mailto:themotorpedia@gmail.com",
+        name: "contact@themotorpedia.com",
+        link: "mailto:contact@themotorpedia.com",
         isLink: true,
         icon: React.createElement(MdOutlineEmail),
       },
       {
         id: uuidv4(),
-        name: "+91 99999-61887",
+        name: "+91 9205522250",
         isLink: true,
-        link: "tel:+91 99999-61887",
+        link: "tel:+91 9205522250",
         icon: React.createElement(PiPhoneCallBold),
       },
       {
         id: uuidv4(),
-        name: "TR24, 3rd Floor, JMD Empire Square Mall, MG Road, Gurugram, Haryana, India - 122001",
+        name: "Suite No. 24, 3rd Floor, JMD Empire Square Mall, MG Road, Gurugram, Haryana, India - 122002",
         isLink: false,
         icon: React.createElement(MdOutlineLocationOn),
       },
@@ -429,19 +405,19 @@ export const getInTouch = [
 export const teamContactDetails = [
   {
     id: uuidv4(),
-    name: "themotorpedia@gmail.com",
-    link: "themotorpedia@gmail.com",
+    name: "contact@themotorpedia.com",
+    link: "contact@themotorpedia.com",
     icon: React.createElement(PiEnvelopeFill),
   },
   {
     id: uuidv4(),
-    name: "+91 99999-61887",
-    link: "tel:+91 99999-61887",
+    name: "+91 9205522250",
+    link: "tel:+91 9205522250",
     icon: React.createElement(PiPhoneCallFill),
   },
   {
     id: uuidv4(),
-    name: "TR24, 3rd Floor, JMD Empire Square Mall, MG Road, Gurugram, Haryana, India - 122001",
+    name: "Suite No. 24, 3rd Floor, JMD Empire Square Mall, MG Road, Gurugram, Haryana, India - 122001",
     link: "",
     icon: React.createElement(PiMapPinFill),
   },
@@ -450,99 +426,107 @@ export const teamContactDetails = [
 export const solutionsFeatures = [
   {
     id: uuidv4(),
-    name: "RTO Services",
-    icon: React.createElement(AiFillFileText),
+    name: "RTO Assistance Network",
+    icon: React.createElement(PiCarSimpleBold),
+    linkto: "/services/RTO",
   },
   {
     id: uuidv4(),
-    name: "Digitalization",
-    icon: React.createElement(PiLightbulbFilamentFill),
+    name: "Comprehensive Digitalization Platform",
+    icon: React.createElement(FaTachographDigital),
+    linkto: "/services/DigitalizePro",
   },
   {
     id: uuidv4(),
-    name: "Procurement Solution",
-    icon: React.createElement(PiHandCoinsFill),
+    name: "Sales Optimization Suite",
+    icon: React.createElement(BsGraphUpArrow),
+    linkto: "/services/saleEnablement",
   },
 
   {
     id: uuidv4(),
-    name: "Sale Enablement",
-    icon: React.createElement(PiRocketLaunchFill),
+    name: "Procurement Powerhouse",
+    icon: React.createElement(FaCartArrowDown),
+    linkto: "/services/saleEnablement",
   },
 ];
 
 export const featuresCard = [
   {
     id: uuidv4(),
-    icon: React.createElement(FaUsers),
+    icon: React.createElement(PiCarSimpleBold),
     name: "RTO Assistance Network",
-    desc: "Covering all RTO requirements including ownership transfer, challan management, NOC procurement, and Vahancheck services. ",
+    desc: "Covering all RTO requirements such as ownership transfer, challan clearance, NOC issuance, and Vahan check services in just few clicks",
+    linkto: "/services/RTO",
   },
   {
     id: uuidv4(),
-    icon: React.createElement(PiHandCoinsFill),
+    icon: React.createElement(FaTachographDigital),
     name: "Comprehensive Digitization Platform",
-    desc: "Offering online and offline marketing, 360-degree photo capabilities with virtual studio, and centralized website for inventory management. ",
+    desc: "Offering online and offline marketing, 360-degree photo- shoot capabilities with virtual studio, and centralized website for inventory management",
+    linkto: "/services/DigitalizePro",
   },
   {
     id: uuidv4(),
-    icon: React.createElement(PiUserGearFill),
-    name: "Procurement Powerhouse",
-    desc: "Providing predictive buying price analysis, lead generation for procurement, vehicle inspection services, and streamlined procurement processes.",
-  },
-  {
-    id: uuidv4(),
-    icon: React.createElement(PiUserPlusFill),
+    icon: React.createElement(BsGraphUpArrow),
     name: "Sales Optimization Suite",
-    desc: "Including lead management, inventory oversight, insurance facilitation, and finance assistance to enhance sales efficiency.",
+    desc: "Including lead management, inventory oversight, insurance facilitation, and finance assistance to enhance sales efficiency ",
+    linkto: "/services/saleEnablement",
+  },
+  {
+    id: uuidv4(),
+    icon: React.createElement(FaCartArrowDown),
+    name: "Procurement Powerhouse",
+    desc: "Providing the predictive buying  price analysis , lead generation for procurement , vehicle inspection services , and inventory funding ",
+    linkto: "/services/saleEnablement",
   },
 ];
 
 export const stepByStepCard = [
   {
     id: uuidv4(),
-    title: "Strategic consultation  ",
-    desc: "Engage in comprehensive discussions and effective liaising, dedicating 30 minutes to grasp challenges and prioritize objectives.",
-    icon: React.createElement(PiFilePlusFill),
+    title: "Strategic Consultation  ",
+    desc: "Engage in comprehensive discussions and effective liaising, dedicating 30 minutes to grasp challenges and prioritize objectives",
+    icon: React.createElement(LiaChalkboardTeacherSolid),
   },
   {
     id: uuidv4(),
-    title: "AI-driven Unified integration ",
-    desc: "Implement Motorpedia's AI tools for a unified dashboard integrating procurement, sales, digital presence, and operational efficiency in dealership operations.",
-    icon: React.createElement(PiUserFill),
+    title: "AI-driven Unified Integration ",
+    desc: "Implement Motorpedia's AI tools for a unified dashboard integrating procurement, sales, digital presence, and operational efficiency in dealership operations",
+    icon: React.createElement(BsRobot),
   },
   {
     id: uuidv4(),
-    title: "Conversion-centric excellence    ",
-    desc: "Prioritize conversion with world-class automotive solutions, ensuring exceptional customer experiences.",
-    icon: React.createElement(PiHandCoinsFill),
+    title: "Conversion-Centric Excellence",
+    desc: "Prioritize conversion with world-class automotive solutions, ensuring exceptional customer experiences",
+    icon: React.createElement(SiConvertio),
   },
 ];
 
 export const whyMotorpediaCard = [
   {
     id: uuidv4(),
-    img: "/images/img1.jpeg",
-    title: "Expertly tailored ",
+    img: whyMotorpediaCard1,
+    title: "Expertly Tailored ",
     des: "We empathize with dealership challenges, offering centralized solutions to meet every need",
   },
   {
     id: uuidv4(),
     img: whyMotorpediaCard2,
-    title: "Timely coordination ",
-    des: "We deliver solutions within the allocated time frame, ensuring a single point of contact.",
+    title: "Timely Coordination ",
+    des: "We consistently deliver solutions within the allocated time frame, ensuring client satisfaction",
   },
   {
     id: uuidv4(),
     img: whyMotorpediaCard3,
-    title: "Value-based billing    ",
-    des: "We'll charge only when it benefits you, ensuring affordability and transparent pricing",
+    title: "Value-Based Billing",
+    des: "We charge only when it benefits you, ensuring affordability and transparent pricing",
   },
   {
     id: uuidv4(),
     img: whyMotorpediaCard4,
-    title: "Personalized management    ",
-    des: "Assigned auto expert manager catering exclusively to all your requirements",
+    title: "Personalized Management",
+    des: "We assign auto expert relationship manager catering exclusively to all your requirements",
   },
   // {
   //   id: uuidv4(),
@@ -575,18 +559,25 @@ export const faqs = [
     id: uuidv4(),
     question: "What services does Motorpedia offer?",
     answer:
-      "Motorpedia offers a comprehensive suite of services, including Ownership Transfer, Challan CLearance, VIP Numbers, Digitalization of Showrooms, and many more.",
+      "Motorpedia offers a comprehensive suite of services to transform auto dealership, including ownership transfer, challan clearance, fancy numbers, digitalization of dealership, and many more",
+  },
+  {
+    id: uuidv4(),
+    question: "Which locations does Motorpedia operate in?",
+    answer:
+      "We are currently operational across NCR, Haryana and Uttar Pradesh",
   },
   {
     id: uuidv4(),
     question: "How does time does ownership transfer take?",
     answer:
-      "Usually we try to do it in 24 hours but we take 24-48 hours as the window for the same.",
+      "Ownership transfer usually takes 3 RTO working dats from the day of document submission / seller peshi as applicable",
   },
   {
     id: uuidv4(),
     question: "Can Motorpedia handle interstate transfers?",
-    answer: "Yes! We currently are active in UP, Haryana and Delhi.",
+    answer:
+      "Yes, Motorpedia can facilitate interstate transfers for any location",
   },
   {
     id: uuidv4(),
@@ -595,9 +586,9 @@ export const faqs = [
   },
   {
     id: uuidv4(),
-    question: "How do I get in touch with Motorpedia's?",
+    question: "How do I get in touch with Motorpedia?",
     answer:
-      "You can either write to us at themotorpedia@gmail.com or can even see us at TR24, JMD Empire Square, MG Road, Gurgaon-122001",
+      "You can write to us at contact@themotorpedia.com and we will be in touch with you shortly",
   },
 ];
 
@@ -605,67 +596,67 @@ export const testimonials = [
   {
     id: uuidv4(),
     img: testimonial1,
-    name: "Ashok Shukla",
-    designation: "Small Business Owner",
+    name: "Amit",
+    designation: "Used Car Dealer in Delhi",
     review:
-      "Outstanding service! Motorpedia RTO Services impressed me with their professionalism and expertise.",
+      "I highly recommend anyone looking for quick and reliable RC transfer services. Thank you for outstanding support!",
   },
   {
     id: uuidv4(),
     img: testimonial2,
-    name: "Priyanshu Kumar",
-    designation: "HR Manager",
+    name: "Rizwan",
+    designation: "Used Bike Dealer in Gurgaon",
     review:
-      "Impeccable service! Motorpedia   Affordable solutions, top-quality results.Highly recommended for all automotive needs.",
+      "What impresses me the most was their innovative lead generation strategies. They utilize cutting-edge tools to connect with potential buyers like me, making the entire bike-buying experience effortless and convenient",
   },
   {
     id: uuidv4(),
     img: testimonial3,
-    name: "Vinay Patel",
-    designation: "Finance Director",
+    name: "Gurpreet",
+    designation: "Used Car Dealer in Ghaziabad",
     review:
-      "Remarkable service! Motorpedia showcased unparalleled professionalism and expertise. They're my go-to for all automotive needs. ",
+      "Thanks to their exceptional photoshoot and inventory presentation, I was able to find the perfect car for my needs without any hassle. The entire experience was seamless",
   },
   {
     id: uuidv4(),
     img: testimonial4,
-    name: "Vinit Sharma",
-    designation: "CEO, Tech Innovations",
+    name: "Rajiv",
+    designation: "Used Commercial Vehicle Dealer in Sonipat",
     review:
-      "Their affordable rates and superior service quality make them my preferred option for all automotive needs. ",
+      "The team made the entire process hassle-free and straightforward. They handled the NOC and Challan clearance with utmost care and attention to detail, ensuring all necessary paperwork was completed accurately and promptly",
   },
-  {
-    id: uuidv4(),
-    img: testimonial5,
-    name: "Lav Kush",
-    designation: "Restaurant Owner",
-    review:
-      "Highly impressed and satisfied with their commitment to excellence. My go-to choice for all car servicing needs",
-  },
-  {
-    id: uuidv4(),
-    img: testimonial6,
-    name: "Parveen Shekhawat",
-    designation: "CEO, Tech Innovations",
-    review:
-      "Their cost-effective solutions and impeccable service quality make them my top recommendation for automotive needs.",
-  },
-  {
-    id: uuidv4(),
-    img: testimonial7,
-    name: "Jiya Arya ",
-    designation: "Product Manager",
-    review:
-      "Absolutely thrilled with the service! Motorpedia showed unmatched professionalism and expertise",
-  },
-  {
-    id: uuidv4(),
-    img: testimonial8,
-    name: "Shreya Sharma",
-    designation: "CFO, Solutions",
-    review:
-      " With their affordable solutions and top-notch service quality, they've earned my trust. I highly recommend them for reliable car assistance",
-  },
+  // {
+  //   id: uuidv4(),
+  //   img: testimonial5,
+  //   name: "Lav Kush",
+  //   designation: "Restaurant Owner",
+  //   review:
+  //     "Highly impressed and satisfied with their commitment to excellence. My go-to choice for all car servicing needs",
+  // },
+  // {
+  //   id: uuidv4(),
+  //   img: testimonial6,
+  //   name: "Parveen Shekhawat",
+  //   designation: "CEO, Tech Innovations",
+  //   review:
+  //     "Their cost-effective solutions and impeccable service quality make them my top recommendation for automotive needs.",
+  // },
+  // {
+  //   id: uuidv4(),
+  //   img: testimonial7,
+  //   name: "Jiya Arya ",
+  //   designation: "Product Manager",
+  //   review:
+  //     "Absolutely thrilled with the service! Motorpedia showed unmatched professionalism and expertise",
+  // },
+  // {
+  //   id: uuidv4(),
+  //   img: testimonial8,
+  //   name: "Shreya Sharma",
+  //   designation: "CFO, Solutions",
+  //   review:
+  //     " With their affordable solutions and top-notch service quality, they've earned my trust. I highly recommend them for reliable car assistance",
+  // },
 ];
 
 export const pricing = [
@@ -739,19 +730,19 @@ export const contactCard = [
   // },
   {
     id: uuidv4(),
-    icon: React.createElement(PiDesktopDuotone),
-    title: "Write us     ",
-    desc: "Curious about our services? Request a demo to experience firsthand",
+    icon: React.createElement(IoMailUnreadOutline),
+    title: "Write to us     ",
+    desc: "Curious about our services? Send an email to know more",
     linkText: "contact@themotorpedia.com",
-    linkto: "/contact",
+    linkto: "mailto:contact@themotorpedia.com",
   },
   {
     id: uuidv4(),
     icon: React.createElement(PiPhoneCallDuotone),
-    title: "Give Us a Ring ",
-    desc: "Monday through Friday from 11AM - 7PM IST ",
+    title: "Give us a ring ",
+    desc: "Monday through Saturday from 9AM - 8PM IST ",
     linkText: "Call Us",
-    linkto: "/contact",
+    linkto: "tel:+919205522250",
   },
   {
     id: uuidv4(),
@@ -759,45 +750,45 @@ export const contactCard = [
     title: "Chat with us",
     desc: "Looking for answers? Chat with us and clear all your doubts",
     linkText: "Ping Us",
-    linkto: "https://wa.me/9999961887",
+    linkto: "https://wa.me/+919205522250",
   },
 ];
 
 export const integrationsCard = [
   {
     id: uuidv4(),
-    icon: React.createElement(PiMoneyFill),
-    title: "Central Dashboard for RTO ",
+    icon: React.createElement(FaPeopleGroup),
+    title: "Dealership Management Solution (DMS)",
     description:
-      "Streamline RTO requirements with a centralized dashboard for efficient management.",
+      "Transform your dealership via our all-in-one digital platform providing comprehensive services such as RTO, finance, insurance and invoicing",
+  },
+  {
+    id: uuidv4(),
+    icon: React.createElement(MdOutlineInventory),
+    title: "Central Inventory Management ",
+    description:
+      "Enhance efficiency in marketing, procurement and sales with centralized inventory management solutions",
   },
   {
     id: uuidv4(),
     icon: React.createElement(SiPrivateinternetaccess),
-    title: "Central Inventory Management ",
+    title: "AI powered Pricing Tool     ",
     description:
-      "Enhance efficiency in marketing, procurement and sales with centralized inventory management solutions.",
+      "Drive informed decisions with predictive analysis of buying/selling prices",
   },
   {
     id: uuidv4(),
-    icon: React.createElement(PiUsersThreeFill),
-    title: "AI powered used Auto Pricing Tool     ",
-    description:
-      "Drive informed decisions with predictive analysis of buying/selling prices.",
-  },
-  {
-    id: uuidv4(),
-    icon: React.createElement(PiTimerFill),
+    icon: React.createElement(TbDeviceDesktopStar),
     title: "Digital Hub ",
     description:
-      "Establish a cohesive digital presence across all social media platforms along with your website with a centralized hub.",
+      "Establish a cohesive digital presence across all social media platforms along with your own website and digital catalogue",
   },
   {
     id: uuidv4(),
     icon: React.createElement(PiHandshakeFill),
     title: "Lead Management ",
     description:
-      "Boost procurement and sales performance through lead improvisation strategies",
+      "Boost procurement and sales performance through lead improvisation strategies",
   },
 ];
 
@@ -805,42 +796,42 @@ export const storyData = [
   {
     id: uuidv4(),
     title: "Who We Are",
-    desc: "At Motorpedia, we're more than just a service provider. We're your partners in revolutionizing the automotive industry. Our team brings years of experience and a passion for innovation to every project. We're dedicated to offering tailored solutions and world-class services to help your dealership thrive. With Motorpedia, you're getting more than just a vendor – you're gaining a trusted partner committed to your success. ",
+    desc: "At Motorpedia, we are more than just a service provider. We are your partners in revolutionizing the automotive industry. Our team brings years of experience and a passion for innovation to every project. We're dedicated to offering tailored solutions and world-class services to help your dealership thrive. With Motorpedia, you're getting more than just a vendor – you're gaining a trusted partner committed to your success ",
   },
   {
     id: uuidv4(),
-    title: "Our Mission",
-    desc: "At Motorpedia, our vision is to redefine the automotive landscape through innovation and technology. We strive to lead the industry by empowering dealerships with AI-driven solutions, transforming traditional approaches into extraordinary experiences. With a commitment to excellence and a passion for progress, we envision a future where every dealership operates at the forefront of innovation, efficiency, and customer satisfaction.",
+    title: "Our Vision",
+    desc: "At Motorpedia, our aspiration is to redefine the automotive landscape through innovation and technology. We strive to lead the industry by empowering dealerships with AI-driven solutions, transforming traditional approaches into extraordinary experiences. With a commitment to excellence and a passion for progress, we envision a future where every dealership operates at the forefront of innovation, efficiency, and customer satisfaction",
   },
   {
     id: uuidv4(),
     title: "Expert Team",
-    desc: "Our team of seasoned automotive specialists offers extensive expertise in every client engagement. From maintenance to performance enhancements, we're equipped to navigate your automotive needs with precision and care",
+    desc: "Our team of seasoned automotive specialists offers extensive expertise in every dealer engagement. From procurement to sales and marketing, we're equipped to navigate all your dealership needs with precision and care",
   },
 ];
 
 export const ourValues = [
   {
     id: uuidv4(),
-    icon: React.createElement(PiHandshakeFill),
+    icon: React.createElement(BsBagHeartFill),
     title: "Customer Empathy",
     desc: "Understanding and addressing customer needs with compassion and consideration",
   },
   {
     id: uuidv4(),
-    icon: React.createElement(PiCheckCircleFill),
+    icon: React.createElement(FaRunning),
     title: "Bias for Action",
     desc: "Taking proactive steps swiftly and decisively to drive progress and achieve goals",
   },
   {
     id: uuidv4(),
-    icon: React.createElement(PiUsersThreeFill),
+    icon: React.createElement(FaHandshakeSimple),
     title: "Commitment to Excellence",
     desc: " Dedicated to achieving the highest standards of performance and continuous improvement in all endeavors",
   },
   {
     id: uuidv4(),
-    icon: React.createElement(PiUserFill),
+    icon: React.createElement(BsPersonCheck),
     title: "Trustworthy",
     desc: "Consistently demonstrating reliability, integrity, and honesty in all interactions",
   },
@@ -882,24 +873,24 @@ export const awardsData = [
 export const coreServices = [
   {
     id: uuidv4(),
-    icon: React.createElement(PiUserFill),
-    title: "DigitalizePro Services",
+    icon: React.createElement(FaTachographDigital),
+    title: "Digitalization",
     link: "/services/DigitalizePro",
-    desc: "Unlock the power of digital transformation with DigitalizePro Services. Elevate your online presence and streamline operations for maximum efficiency",
+    desc: "Elevate your online presence across all social media platforms, establish your own website, enjoy seamless digital catalogue, enhance vehicle listing through professional photoshoot and editing - all this through our comprehensive digitalization platform",
   },
   {
     id: uuidv4(),
-    icon: React.createElement(PiHandCoinsFill),
-    title: "RTO Services",
+    icon: React.createElement(PiCarSimpleBold),
+    title: "RTO Assistance",
     link: "/services/RTO",
-    desc: "Unorganized agent network catering to different RTO related needs. From Vehicle Regsitration to ownership transfer, we've got it all.",
+    desc: "Say goodvye to all your RTO related issues with our one-stop solution - be it basic ownership transfer, hypothecation addition and termination, challan clearance or NOC issuance, we have got you covered and all this at superfast TATs",
   },
   {
     id: uuidv4(),
-    icon: React.createElement(PiFileFill),
-    title: "Sale Enablement",
+    icon: React.createElement(BsGraphUpArrow),
+    title: "Sales Enablement",
     link: "/services/saleEnablement",
-    desc: "With our hassle free Sale Enablement Service you'll find ease in exploring Finance options, Insurance, Inventory Funding and many more.",
+    desc: "You focus on right buying and selling of cars while we take care of the rest - finance, insurance, inventory funding, warrenty, RSA, refurbishment, lead management, inventory oversight and pricing solutions to improve your vehicle transaction experience",
   },
   // {
   //   id: uuidv4(),
@@ -928,12 +919,12 @@ export const whatWeDo = [
   {
     id: uuidv4(),
     title: "Target Audience Identification",
-    desc: "Pinpoint your ideal customer base through thorough market analysis and demographic research, ensuring precise targeting for effective lead generation",
+    desc: "Pinpoint your ideal customer base, ensuring precise targeting for effective lead generation",
   },
   {
     id: uuidv4(),
     title: "Engaging Content Creation",
-    desc: "Craft compelling and relevant content tailored to your audience's needs and preferences, capturing their attention and encouraging them to take action",
+    desc: "Craft compelling and relevant content tailored to your customer's needs and preferences, capturing their attention and encouraging them to take action",
   },
   {
     id: uuidv4(),
@@ -950,26 +941,26 @@ export const whatWeDo = [
 export const accountingServices = [
   {
     id: uuidv4(),
-    title: "Ownership Transfer",
-    desc: "Ownership Transfer of your pre-owned vehicle within 3 days of opening with our trustworthy contacts.",
-    icon: React.createElement(PiCarDuotone),
+    title: "Ownership Transfer and New Vehicle Registration",
+    desc: "Ownership Transfer of pre-owned vehicle/ registration of new vehicle with a well-defined TAT along with status updates throughout the process",
+    icon: React.createElement(GiCarKey),
   },
   {
     id: uuidv4(),
-    title: "Vehicle Regsitration",
-    desc: "From registring your vehicle or buying your new vehicle, Motorpedia provides hassle free path.",
+    title: "Hypothecation Termination and Addition",
+    desc: "Hypothecation related services now at your fingertips - no more hassle in loan cases!!",
     icon: React.createElement(PiFileTextFill),
   },
   {
     id: uuidv4(),
-    title: "Challan Clearance and Fancy Numbers",
-    desc: "Challan Clearance and Fancy Numbers for our customers at the earliest convience. ",
+    title: "Challan Clearance and Bank NOC Issuance",
+    desc: "Challan clearance and NOC issuance for our customers within superfast TATs to ensure stress free buying and selling of vehicles",
     icon: React.createElement(PiMoneyFill),
   },
   {
     id: uuidv4(),
-    title: "NOC Issuance",
-    desc: "NOC Issuance for customers opting for it to engage them in stress free document approval.",
+    title: "Fancy Number and HSRP Booking",
+    desc: "Booking of fancy numbers and HSRP in advance resulting in seamless car buying experience for your customers",
     icon: React.createElement(PiFileArchiveDuotone),
   },
 ];
@@ -977,37 +968,32 @@ export const accountingServices = [
 export const neverWorry = [
   {
     id: uuidv4(),
-    title: "Hypothecation Addition",
-    desc: "We resolve issues and offer advice quickly.",
-    icon: React.createElement(PiFilePlusFill),
+    title: "NOC Issuance",
+    desc: "Interstate registering your vehicle in another state? Get the interstate NOC through us in lightning fast TATs",
+    icon: React.createElement(HiDocumentCheck),
   },
 
   {
     id: uuidv4(),
-    title: "HSPR Booking",
-    desc: "We proactiveily work in the domain of HSPR Booking",
-    icon: React.createElement(PiCheckSquareDuotone),
+    title: "Advance Party Peshi",
+    desc: "Seller going out of town? Get advance party peshi done to avoid later hassles",
+    icon: React.createElement(BsClockHistory),
   },
   {
     id: uuidv4(),
-    title: "Vehicle Fitness and Tracking Device Fitment",
-    desc: "Your one stop place for fitness certificate and Tracking device fitment.",
-    icon: React.createElement(SiPivotaltracker),
+    title: "Care-off transfers",
+    desc: "Buyer doesn't have local address proff? Get the vehicle registered via us with a local care-off address",
+    icon: React.createElement(FaHandshakeSimple),
   },
   {
     id: uuidv4(),
-    title: "Prompt Renewal Services",
-    desc: "Efficient renewal solutions.",
-    icon: React.createElement(PiCarProfileDuotone),
+    title: "Duplicate RC and RC modifications",
+    desc: "RC is missing or eeds coorections? Explore our super efficient RC solutions",
+    icon: React.createElement(PiFilePlusFill),
   },
 ];
 
 export const accountantFeatures = [
-  {
-    id: uuidv4(),
-    title: "Receipt and Clearance Certificate",
-    desc: "Upon successful verification, customers receive a receipt of payment and a clearance certificate stating that all outstanding challans have been cleared.",
-  },
   {
     id: uuidv4(),
     title: "Identification of Outstanding Challans",
@@ -1018,53 +1004,58 @@ export const accountantFeatures = [
     title: "Verification",
     desc: " After payment is made, the RTO or motorworks service center verifies the clearance of the challans by checking with the respective authorities or online portals.",
   },
+  {
+    id: uuidv4(),
+    title: "Receipt and Clearance Certificate",
+    desc: "Upon successful verification, customers receive a receipt of payment and a clearance certificate stating that all outstanding challans have been cleared.",
+  },
 ];
 
 export const taxationFeatures = [
   {
     id: uuidv4(),
-    title: "Tax Preparation and Filing",
-    desc: "Ensure a seamless tax season with our expert tax preparation services. We handle all necessary documentation and filing requirements,",
-    icon: React.createElement(PiCoinFill),
+    title: "Used Vehicle Financing",
+    desc: " Apply for used vehicle loans at best-in-market interest rates and best commission",
+    icon: React.createElement(FaMoneyBillTransfer),
   },
   {
     id: uuidv4(),
-    title: "Strategic Tax Planning",
-    desc: "Plan for the future with our strategic tax planning services. We help optimize your financial decisions to maximize savings and minimize potential risks.",
-    icon: React.createElement(PiHandCoinsFill),
+    title: "New Vehicle Financing",
+    desc: "Get new vehicle finance options from <br> all premier banks & NBFCs",
+    icon: React.createElement(FaCarAlt),
   },
   {
     id: uuidv4(),
-    title: "Compliance Assurance",
-    desc: "Stay compliant with ever-changing tax regulations. Our team stays abreast of updates, ensuring your business adheres to all relevant tax laws",
-    icon: React.createElement(PiSealCheckFill),
+    title: "Inventory Funding",
+    desc: "Avail working capitals loans to buy more cars and  increase your business ",
+    icon: React.createElement(RiFundsBoxFill),
   },
   {
     id: uuidv4(),
-    title: "Audit Support",
-    desc: "In the event of an audit, our experienced team provides support, helping you navigate the process efficiently and effectively.",
-    icon: React.createElement(PiHeadphonesFill),
+    title: "Refinance",
+    desc: "Get existing customer loans refinanced at better rates or get a balance topup",
+    icon: React.createElement(RiExchangeFundsLine),
   },
 ];
 
 export const whtaWeDoTaxationData = [
   {
     id: uuidv4(),
-    icon: React.createElement(PiUserFill),
-    title: "Expert Tax Professionals",
-    desc: "Our team of tax professionals brings extensive knowledge and expertise to handle various tax scenarios.",
+    icon: React.createElement(TbQuotes),
+    title: "Cheapest Quotes",
+    desc: "Get the best priced quotes for your insurance",
   },
   {
     id: uuidv4(),
-    icon: React.createElement(PiUsersThreeFill),
-    title: "Personalized Consultations",
-    desc: "We understand that every business is unique. Our personalized consultations ensure that our tax services.",
+    icon: React.createElement(BiSelectMultiple),
+    title: "Multiple Insurance",
+    desc: "Be Spoilt for choice with offers from multitude of insurers for every vehicle",
   },
   {
     id: uuidv4(),
-    icon: React.createElement(PiLightbulbFilamentFill),
-    title: "Strategic Advice",
-    desc: "Beyond compliance, we offer strategic advice to help you make informed financial decisions that benefit your business.",
+    icon: React.createElement(BiSolidOffer),
+    title: "Best Offers",
+    desc: "Avail best discount and cashbacks on every case done through MotorPedia",
   },
 ];
 
@@ -1147,47 +1138,47 @@ export const manageHealthItems = [
   {
     id: uuidv4(),
     icon: React.createElement(PiFileMagnifyingGlassDuotone),
-    title: "Legal Clearance",
+    title: "Pre-purchase loan verification",
   },
   {
     id: uuidv4(),
-    icon: React.createElement(PiTimerFill),
-    title: "Compliance Verification",
+    icon: React.createElement(BiCheckShield),
+    title: "Bank NOC Validation",
   },
   {
     id: uuidv4(),
-    icon: React.createElement(PiWalletFill),
-    title: "Documentation",
+    icon: React.createElement(HiDocumentCheck),
+    title: "Fresh NOC issuance",
   },
   {
     id: uuidv4(),
     icon: React.createElement(PiChartLineFill),
-    title: "Vehicle History Check",
+    title: "Loan foreclosure services",
   },
 ];
 
 export const dentistSectionFeatures = [
   {
     id: uuidv4(),
-    icon: React.createElement(PiToothFill),
+    icon: React.createElement(BiTargetLock),
     title: "Targeted Advertising",
     desc: " Reach potential car buyers precisely where they are, leveraging advanced targeting tools to maximize exposure and engagement.",
   },
   {
     id: uuidv4(),
-    icon: React.createElement(PiUsersThreeFill),
+    icon: React.createElement(MdEditDocument),
     title: "Compelling Content Creation",
     desc: "Captivate audiences with visually stunning imagery, informative videos, and persuasive copywriting, enticing them to explore your inventory further.",
   },
   {
     id: uuidv4(),
-    icon: React.createElement(PiUserFill),
+    icon: React.createElement(RiSeoFill),
     title: "Search Engine Optimization (SEO)",
     desc: "Enhance your website's visibility on search engines, ensuring that your car listings rank prominently for relevant search queries.",
   },
   {
     id: uuidv4(),
-    icon: React.createElement(PiUsersThreeFill),
+    icon: React.createElement(TiSocialGooglePlusCircular),
     title: "Social Media Engagement",
     desc: " Leverage the power of social media platforms to build brand awareness, engage with potential buyers, and showcase your inventory in an interactive and appealing manner",
   },
