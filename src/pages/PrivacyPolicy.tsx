@@ -8,29 +8,25 @@ function PrivacyPolicy() {
       <BreadcrumbSection
         img={breadcrumpIllus}
         pageName="Privacy Policy"
-        pageDesc="We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy."
+        pageDesc=""
         pageTitle="Privacy Policy"
       />
 
-      <section className="container stp-30 sbp-30 flex flex-col gap-2">
+      <section className="container pt-10 flex flex-col gap-2">
         <div className=" flex justify-start items-start flex-col">
-          <p className="bg-p1 py-3 px-5 text-white rounded-full">
-            Privacy Policy
-          </p>
-          <h2 className="display-4 py-6">Privacy Policy</h2>
           <p className=" text-bodyText">
-            We use Your Personal data to provide and improve the Service. By
-            using the Service, You agree to the collection and use of
-            information in accordance with this Privacy Policy.
+            We use your personal data to provide and improve the service. By
+            using the service, you agree to the collection and use of
+            information in accordance with this privacy policy.
           </p>
         </div>
 
         <div className="">
           <h3 className="heading-1 py-6">Information we collect</h3>
           <p className=" text-bodyText">
-            While using Our Service, We may ask You to provide Us with certain
+            While using our service, we may ask you to provide us with certain
             personally identifiable information that can be used to contact or
-            identify You. Personally identifiable information may include, but
+            identify you. Personally identifiable information may include, but
             is not limited to:
           </p>
 
@@ -59,19 +55,19 @@ function PrivacyPolicy() {
         <div className="">
           <h3 className="heading-2 py-6">Use of information</h3>
           <p className=" text-bodyText">
-            Usage Data is collected automatically when using the Service. Usage
-            Data may include information such as Your Device's Internet Protocol
-            address (e.g. IP address), browser type, browser version, the pages
-            of our Service that You visit, the time and date of Your visit, the
+            Usage data is collected automatically when using the service. Usage
+            data may include information such as your device's internet protocol
+            address (e.g. Ip address), browser type, browser version, the pages
+            of our service that you visit, the time and date of your visit, the
             time spent on those pages, unique device identifiers and other
-            diagnostic data. When You access the Service by or through a mobile
-            device, We may collect certain information automatically, including,
-            but not limited to, the type of mobile device You use, Your mobile
-            device unique ID, the IP address of Your mobile device, Your mobile
-            operating system, the type of mobile Internet browser You use,
+            diagnostic data. When you access the service by or through a mobile
+            device, we may collect certain information automatically, including,
+            but not limited to, the type of mobile device you use, your mobile
+            device unique id, the IP address of your mobile device, your mobile
+            operating system, the type of mobile internet browser you use,
             unique device identifiers and other diagnostic data. We may also
-            collect information that Your browser sends whenever You visit our
-            Service or when You access the Service by or through a mobile
+            collect information that your browser sends whenever you visit our
+            service or when you access the service by or through a mobile
             device.
           </p>
         </div>
@@ -110,10 +106,10 @@ function PrivacyPolicy() {
               <span className="text-2xl text-p1">
                 <PiCheckCircle />
               </span>
-              To provide You with news, special offers and general information
+              To provide you with news, special offers and general information
               about other goods, services and events which we offer that are
               similar to those that you have already purchased or enquired about
-              unless You have opted not to receive such information.
+              unless you have opted not to receive such information.
             </li>
             <li className="flex justify-start items-center gap-1">
               <span className="text-2xl text-p1">
@@ -131,121 +127,87 @@ function PrivacyPolicy() {
         </div>
 
         <div className="">
-          <h3 className="heading-3 py-6">Data Sharing and Third Part</h3>
+          <h3 className="heading-3 py-6">Data Sharing with Third Party</h3>
           <p className=" text-bodyText">
-            We may share Your personal information in the following situations:
+            We collect certain personal information and other information from
+            you and when you access the platform or our services, or when you
+            register with our platform. The personal information we collect
+            includes your name, residential address, contact number, e-mail
+            address, or any other data or information as may be required. We may
+            disclose your personal information and other information to any of
+            our associated brands, associated entities, subsidiary, group
+            entitles, vendors, and other service providers who work for us or
+            provide services through platform and are bound by contractual
+            obligations to keep such personal information confidential and use
+            it only on purpose.
           </p>
-          <ul className="pt-6 flex flex-col gap-4">
-            <li className="flex justify-start items-center gap-1">
-              <span className="text-2xl text-p1">
-                <PiCheckCircle />
-              </span>
-              With Service Providers
-            </li>
-            <li className="flex justify-start items-center gap-1">
-              <span className="text-2xl text-p1">
-                <PiCheckCircle />
-              </span>
-              For business transfers
-            </li>
-            <li className="flex justify-start items-center gap-1">
-              <span className="text-2xl text-p1">
-                <PiCheckCircle />
-              </span>
-              With Affiliate
-            </li>
-            <li className="flex justify-start items-center gap-1">
-              <span className="text-2xl text-p1">
-                <PiCheckCircle />
-              </span>
-              With business partners
-            </li>
-            <li className="flex justify-start items-center gap-1">
-              <span className="text-2xl text-p1">
-                <PiCheckCircle />
-              </span>
-              With Your consent
-            </li>
-          </ul>
+          <br></br>
+          <p>
+            We may share information we think we have to in order to comply with
+            The law or to protect ourselves. We will share information to
+            Respond to a court order or judicial summons. We may also share it
+            If a governmental agency or investigatory body requests. Your
+            Consent. By using the site you shall be deemed to have expressly
+            Consented to our use of information and data as aforementioned. By
+            Providing us with yiur information or using the site, you consent to
+            The transfer and processing of your information outside your country
+            Of residence.
+          </p>
         </div>
 
         <div className="">
           <h3 className="heading-3 py-6">Data retention</h3>
           <p className=" text-bodyText">
             The Company will retain Your Personal Data only for as long as is
-            necessary for the purposes set out in this Privacy Policy. We will
-            retain and use Your Personal Data to the extent necessary to comply
-            with our legal obligations (for example, if we are required to
-            retain your data to comply with applicable laws), resolve disputes,
-            and enforce our legal agreements and policies. The Company will also
-            retain Usage Data for internal analysis purposes. Usage Data is
-            generally retained for a shorter period of time, except when this
-            data is used to strengthen the security or to improve the
-            functionality of Our Service, or We are legally obligated to retain
-            this data for longer time periods.
+            Necessary for the purposes set out in this Privacy Policy. We will
+            Retain and use Your Personal Data to the extent necessary to comply
+            With our legal obligations (for example, if we are required to
+            Retain your data to comply with applicable laws), resolve disputes,
+            And enforce our legal agreements and policies. The Company will also
+            Retain Usage Data for internal analysis purposes. Usage Data is
+            Generally retained for a shorter period of time, except when this
+            Data is used to strengthen the security or to improve the
+            Functionality of Our Service, or We are legally obligated to retain
+            This data for longer time periods.
           </p>
-
-          <ul className="pt-6 flex flex-col gap-4">
-            <li className="flex justify-start items-center gap-1">
-              <span className="text-2xl text-p1">
-                <PiCheckCircle />
-              </span>
-              We believe in minimizing data storage while ensuring compliance
-              with regulations
-            </li>
-            <li className="flex justify-start items-center gap-1">
-              <span className="text-2xl text-p1">
-                <PiCheckCircle />
-              </span>
-              For specific details on our data retention practices
-            </li>
-            <li className="flex justify-start items-center gap-1">
-              <span className="text-2xl text-p1">
-                <PiCheckCircle />
-              </span>
-              please refer to our comprehensive Privacy Policy. Your trust is
-              paramount
-            </li>
-          </ul>
         </div>
 
         <div className="">
           <h3 className="heading-3 py-6">Cookies and tracking technologies</h3>
           <p className=" text-bodyText">
-            Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies
-            remain on Your personal computer or mobile device when You go
-            offline, while Session Cookies are deleted as soon as You close Your
-            web browser.
+            Cookies can be "persistent" or "session" cookies. Persistent cookies
+            Remain on your personal computer or mobile device when you go
+            Offline, while session cookies are deleted as soon as you close your
+            Web browser.
           </p>
         </div>
 
         <div className="">
           <h3 className="heading-3 py-6">Children's privacy</h3>
           <p className=" text-bodyText">
-            Our Service does not address anyone under the age of 13. We do not
-            knowingly collect personally identifiable information from anyone
-            under the age of 13. If You are a parent or guardian and You are
-            aware that Your child has provided Us with Personal Data, please
-            contact Us. If We become aware that We have collected Personal Data
-            from anyone under the age of 13 without verification of parental
-            consent, We take steps to remove that information from Our servers.
-            If We need to rely on consent as a legal basis for processing Your
-            information and Your country requires consent from a parent, We may
-            require Your parent's consent before We collect and use that
-            information.
+            Our service does not address anyone under the age of 13. We do not
+            Knowingly collect personally identifiable information from anyone
+            Under the age of 13. If you are a parent or guardian and you are
+            Aware that your child has provided us with personal data, please
+            Contact us. If we become aware that we have collected personal data
+            From anyone under the age of 13 without verification of parental
+            Consent, we take steps to remove that information from our servers.
+            If we need to rely on consent as a legal basis for processing your
+            Information and your country requires consent from a parent, we may
+            Require your parent's consent before we collect and use that
+            Information.
           </p>
         </div>
 
         <div className="">
           <h3 className="heading-3 py-6">Changes to the privacy policy</h3>
           <p className=" text-bodyText">
-            We may update Our Privacy Policy from time to time. We will notify
-            You of any changes by posting the new Privacy Policy on this page.
-            We will let You know via email and/or a prominent notice on Our
-            Service, prior to the change becoming effective and update the "Last
-            updated" date at the top of this Privacy Policy. You are advised to
-            review this Privacy Policy periodically for any changes. Changes to
-            this Privacy Policy are effective when they are posted on this page.
+            This Privacy Policy was last updated on 20-04-2024. We may update
+            Our Privacy Policy from time to time. We will notify you of any
+            Material changes to this policy as required by law by posting the
+            New Privacy Policy on this page. You are advised to review this
+            Privacy Policy periodically for any changes. Changes to this Privacy
+            Policy are effective when they are posted on this page.
           </p>
         </div>
 
@@ -253,8 +215,8 @@ function PrivacyPolicy() {
           <h3 className="heading-3 py-6">Contact information</h3>
           <p className=" text-bodyText">
             If you have any questions or concerns regarding our Privacy Policy
-            or the handling of your personal information, please contact us at :
-            <span className="text-p1"> motorpedia@gmail.com</span>
+            Or the handling of your personal information, please contact us at :
+            <span className="text-p1"> contact@themotorpedia.com</span>
           </p>
         </div>
       </section>

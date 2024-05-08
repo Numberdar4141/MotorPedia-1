@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { GoChevronDown } from "react-icons/go";
-//import { PiPhoneCallDuotone } from "react-icons/pi";
 import { RiMenuFoldFill } from "react-icons/ri";
 import { Link, useLocation } from "react-router-dom";
 import { headerMenu } from "../../data/data";
@@ -58,7 +57,7 @@ function Header() {
             </button>
             <div className="p-0 ">
               <Link to={"/"}>
-                <img src={logo} className="w-48 " alt="motorpedia logo" />
+                <img src={logo} className="w-56" alt="MotorPedia" />
               </Link>
             </div>
           </div>
@@ -83,7 +82,7 @@ function Header() {
                         </span>
                       </div>
                       <ul
-                        className={`absolute top-12 left-0 pointer-events-none group-hover:eventunset flex justify-start items-start flex-col w-[230px] py-6 gap-3 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:z-50 bg-s1 text-white/80  rounded-lg ${
+                        className={`absolute top-12 left-0 pointer-events-none group-hover:eventunset flex justify-start items-start flex-col w-[220px] py-6 gap-3 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:z-50 bg-s1 text-white/80  rounded-lg ${
                           menuToggle === menu.id
                             ? "translate-y-0 scale-100"
                             : "translate-y-8 scale-75"
@@ -119,14 +118,6 @@ function Header() {
           </nav>
 
           <div className="flex justify-end items-center gap-2 sm:gap-6 xl:gap-10 font-medium max-sm:hidden relative right-50 left-50">
-            {/* <div className="flex justify-between items-center gap-1  translate-x-[90px]">
-              <span className="bg-s1 rounded-full text-s2 p-2 md:p-3 text-lg lg:text-2xl">
-                <PiPhoneCallDuotone />
-              </span>
-              <Link to={"tel:+91 99999-61887"} className="max-xl:hidden">
-                +91 99999-61887
-              </Link>
-            </div> */}
             <div className="">
               <LinkButton link="/contact" text="Contact Us" />
             </div>

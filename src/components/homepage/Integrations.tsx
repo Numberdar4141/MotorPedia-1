@@ -8,11 +8,11 @@ function Integrations() {
       <div className="container grid grid-cols-12">
         <div className="flex justify-start items-start col-span-12 lg:col-span-5 max-lg:sbp-15">
           <div className="  max-w-[600px] flex justify-start items-start flex-col">
-            <h1 className="display-4  pt-4 pb-6">Our Solutions</h1>
+            <h1 className="display-4  pt-4 pb-6">Our Solutions</h1>
             <p className="text-bodyText">
               Experience seamless coordination with our comprehensive solutions.
               From RTO services to technological integrations, we bring
-              everything together in one place
+              everything together
             </p>
           </div>
         </div>
@@ -39,8 +39,8 @@ function Integrations() {
             >
               {icon}
             </div>
-            <h4 className="heading-5 pt-6 pb-5 w-[200px]">{title}</h4>
-            <p>{description}</p>
+            <h4 className="heading-5 pt-6 pb-5 w-[250px]">{title}</h4>
+            <p className="text-justify">{description}</p>
             <div className="flex justify-end items-end w-full pt-10  text-xl font-medium">
               <Link
                 to={"/services"}

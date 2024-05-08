@@ -1,15 +1,13 @@
 import { useState } from "react";
-import {
-  PiEnvelopeFill,
-  PiMapPinFill,
-  PiPencilSimpleFill,
-} from "react-icons/pi";
+import axios from "axios";
+import { PiEnvelopeFill, PiMapPinFill } from "react-icons/pi";
 import { Link } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import CTASectiont from "../components/homepage/CTASectiont";
 import BreadcrumbSection from "../components/ui/BreadcrumbSection";
 import { contactPageCard } from "../data/data";
 import breadcrumpIllus from "/images/contact.png";
+import { CiMobile1 } from "react-icons/ci";
 // import locationImg from "/images/contact_page_img.png";
 
 function ContactPage() {
@@ -18,7 +16,7 @@ function ContactPage() {
   const [subject, setSubject] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  //const notify = () => toast("Message send successfully!");
+  const notify = () => toast("Message sent successfully!");
 
   // function handleSubmit(e: SyntheticEvent<HTMLFormElement, SubmitEvent>) {
   //   e.preventDefault();
@@ -30,20 +28,36 @@ function ContactPage() {
   //   setMessage("");
   // }
 
-  const handleformfill = async () => {
-    console.log(firstName);
-    console.log(lastName);
-    console.log(email);
-    console.log(subject);
-    console.log(message);
-  };
+  function handleformfill() {
+    notify();
+    // console.log(firstName);
+    // console.log(lastName);
+    // console.log(email);
+    // console.log(subject);
+    // console.log(message);
+    const Data ={
+      FirstName:firstName,
+      LastName:lastName,
+      Email:email,
+      Mobile_No:subject,
+      Message:message,
+    }
+    axios.post('https://sheet.best/api/sheets/bda7637b-5f07-4ae3-920c-f537028e88aa',Data).then((response)=>{
+      console.log(response);
+      setFirstName('');
+      setLastName('');
+      setEmail('');
+      setSubject('');
+      setMessage('');
+    })
+  }
 
   return (
     <main>
       <BreadcrumbSection
         img={breadcrumpIllus}
-        pageName="Course"
-        pageDesc="Connect with us for expert accounting and payroll services. Reach out via the form or contact information below."
+        pageName="Contact Us"
+        pageDesc="Reach out to us to transform your dealership now. Fill out the form or connect on the below information and our team will be in touch shortly"
         pageTitle="Connect With Us"
       />
       <section className="container grid grid-cols-12 stp-30 sbp-30">
@@ -51,7 +65,7 @@ function ContactPage() {
           {contactPageCard.map(
             ({ id, icon, name, link, address, linkText }) => (
               <div
-                className="flex flex-col justify-start items-start p-4 lg:p-8 bg-p1 text-white w-full col-span-12 sm:col-span-4 border border-p1 hover:bg-gray-200 hover:text-mainTextColor hover:border-mainTextColor duration-500 group"
+                className="flex flex-col justify-start items-start p-4 lg:p-8 bg-p1 text-white w-full col-span-12 sm:col-span-4 border border-p1 hover:bg-gray-200 hover:text-mainTextColor rounded-lg hover:border-mainTextColor duration-500 group"
                 key={id}
               >
                 <div
@@ -60,7 +74,7 @@ function ContactPage() {
                 >
                   {icon}
                 </div>
-                <h4 className="heading-4 pt-5 pb-2">{name}</h4>
+                <h4 className="heading-4 pt-5 pb-2 ">{name}</h4>
                 {link && <Link to={link}>{linkText}</Link>}
                 {address && <p>{address}</p>}
               </div>
@@ -69,14 +83,16 @@ function ContactPage() {
         </div>
 
         <div className=" col-span-12 lg:col-span-8 lg:col-start-3 border p-4 sm:p-6 lg:p-10">
-          <h4 className="heading-4 pb-6">Fill the From Below</h4>
-          <form
+          <h4 className="heading-4 pb-6">Fill the form below</h4>
+          <form autoComplete="off"
             onSubmit={(e) => e.preventDefault()}
+           
             className="grid grid-cols-2 gap-6"
           >
             <div className=" col-span-2 sm:col-span-1">
               <input
                 type="text"
+                name="First Name"
                 placeholder="First Name"
                 className=" placeholder:text-bodyText py-4 px-8 border w-full"
                 value={firstName}
@@ -87,6 +103,7 @@ function ContactPage() {
             <div className="col-span-2 sm:col-span-1">
               <input
                 type="text"
+                name="Last Name"
                 placeholder="Last Name"
                 className=" placeholder:text-bodyText py-4 px-8 border w-full"
                 value={lastName}
@@ -99,8 +116,9 @@ function ContactPage() {
                 <PiEnvelopeFill />
               </span>
               <input
-                type="text"
-                placeholder="Type email address"
+                type="email"
+                name="Email"
+                placeholder="Email"
                 className=" placeholder:text-bodyText w-full outline-none"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -109,11 +127,12 @@ function ContactPage() {
             </div>
             <div className=" col-span-2 sm:col-span-1 py-4 px-8 border  flex justify-start items-center gap-2">
               <span className="text-xl text-bodyText">
-                <PiPencilSimpleFill />
+                <CiMobile1 />
               </span>
               <input
-                type="text"
-                placeholder="Subject"
+                type="tel"
+                name="Mobile Number"
+                placeholder="Mobile Number"
                 className=" placeholder:text-bodyText w-full outline-none"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
@@ -122,7 +141,8 @@ function ContactPage() {
             </div>
             <div className="col-span-2 py-4 px-8 border  flex justify-start items-center gap-2">
               <textarea
-                placeholder="Type Your message..."
+                placeholder="Type your message..."
+                name="Message"
                 className=" placeholder:text-bodyText w-full outline-none h-[200px]"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
@@ -130,13 +150,9 @@ function ContactPage() {
               />
             </div>
             <div className="col-span-2 table-checkbox flex justify-between items-center max-[400px]:flex-col max-[400px]:items-start gap-5">
-              <label className="flex justify-start items-center gap-2">
-                {/* <input type="checkbox" className=" " /> */}
-                {/* <p>Subscribe to our newsletter.</p> */}
-              </label>
               <button
                 onClick={handleformfill}
-                className="py-2 sm:py-3 px-4 sm:px-6 bg-p1 text-white block text-center border border-p1 hover:bg-s2 hover:border-mainTextColor hover:text-mainTextColor duration-500 w-full"
+                className="py-2 sm:py-3 sm:px-6 bg-p1 text-white block text-center border border-p1 hover:bg-s2 hover:border-mainTextColor hover:text-mainTextColor duration-500 w-full"
               >
                 Submit
               </button>
@@ -159,11 +175,10 @@ function ContactPage() {
               <div className="bg-mainTextColor text-white text-3xl p-3 rounded-full">
                 <PiMapPinFill />
               </div>
-              <div className="">
-                <h4 className="heading-4 pb-1">Gurugram :</h4>
+              <div className="pb-1">
                 <p>
                   Suite No. 24, 3rd Floor, JMD Empire Square Mall, MG Road,
-                  Gurugram - 122001
+                  Gurugram, Haryana - 122002
                 </p>
               </div>
             </li>

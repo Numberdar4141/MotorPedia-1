@@ -14,7 +14,7 @@ function Footer() {
             <img src={logo} onClick={backtoTop} alt="" />
           </Link>
           <p className="">
-            Expertly created automotive solutions by automotive professionals.
+            Expertly curated automotive solutions by automotive professionals.
           </p>
           <ul className="flex justify-start items-center gap-2">
             {socialLinks.map(({ id, link, icon }, idx) => (
@@ -93,7 +93,7 @@ function Footer() {
       <div className="border-t border-white/10">
         <div className="container py-6 flex justify-between items-center max-md:flex-col gap-6">
           <p className=" max-sm:text-center">
-            Motorpedia © Copyright {new Date().getFullYear()}. All Rights
+            MotorPedia © Copyright {new Date().getFullYear()}. All Rights
             Reserved.
           </p>
           <div className="flex justify-end items-center">
